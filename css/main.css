@@ -1,0 +1,120 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+}
+body {
+    font-family: Arial, Helvetica, sans-serif, Helvetica, Arial;
+    background-color: rgb(240, 240, 240);
+}
+.container {
+    padding: 2rem;
+    width: 100%;
+}
+.container h1 {
+    line-height: 2rem;
+    text-align: center;
+    font-weight: 600;
+    font-size: 3rem;
+    margin: 2rem;
+}
+.panel {
+    margin-top: 5rem;
+    padding: 0 2rem;
+    display: flex;
+    justify-content: space-between;
+}
+.panel .no-ayat {
+    width: 2rem;
+    margin-left: 1rem; 
+}
+.container .title-arabic {
+    font-size: 2rem;
+    color: rgb(50, 50, 50);    
+}
+.surah-container {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    padding: 3rem 0;
+}
+.surah-card {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 3px solid rgba(0, 0, 0, 0.3);
+    border-radius: 10px;
+    width: 25rem;
+    margin: 3px;
+    height: 6rem;
+    color: rgba(0, 0, 0, 0.8);
+    cursor: pointer;
+    transition: 0.3s;
+}
+.surah-card:hover {
+    background-color: lightblue;
+}
+.surah-card .number {
+    width: 2rem;
+}
+.surah-card .number,
+.surah-card .judul-arab {
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.number {
+    font-size: 20px;
+    font-weight: 600;
+}
+.judul-latin {
+    font-size: 20px;
+    line-height: 2.5rem;
+}
+.judul-latin .surah-sub {
+    color: rgba(0,0,0,0.5);
+}
+.judul-arab {
+    padding: 10px;
+    font-size: 2rem;
+    width: 7rem;
+}
+.judul-latin li {
+    list-style: none;
+    text-align: center;
+}
+
+/* Al-Qur'an Surah */
+
+.container-content {
+    width: 100%;
+    padding: 2rem;
+    height: fit-content;
+}
+.container-ayat {
+    display: flex;
+    justify-content: space-between;
+}   
+.container-ayat .ayat{
+    font-size: 2.8rem;
+    text-align: right;
+    padding: 0 2rem;
+}
+.container-ayat .no-ayat,
+.translation {
+    font-size: 1.4rem;
+    height: 5rem;
+    display: flex;
+    align-items: center;
+}
+.no-ayat {
+    width: 5rem;
+    padding: 1rem 0;
+}
+.translation {
+    height: fit-content;
+    padding: 3rem 0;
+    color: rgb(50, 50, 50);
+}
